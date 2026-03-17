@@ -1,0 +1,22 @@
+step 1
+
+    initialization 
+    initial board rendering 
+    drag and drop functionlity 
+    Socket event handling - client  and server 
+
+
+ 1.Initialization
+    i] socket and chess object are initialized
+    ii] Board element is selected from the DOM
+    iii] initial values for draggedpiece , sourcesquare, and playerRole are set to null.
+
+2.initial Board Rendering 
+    i] renderboard() is called  to display the initial state for chessboard.
+
+3.Drag and Drop Functionlity
+i] renderboard set-up drag-and-drop event listeners  for each piece and sqaure (manje jeva aapn ekda piace move karnar teva te sagal detect honar )
+ii] pieces are draggable based on the player role
+iii] when piece is dragged , draggedpiece and sourcesquare are set
+iv] when a piece is dropped , handlemove() is called to handle the move logic and emit it to the server 
+
